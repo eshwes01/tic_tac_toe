@@ -221,7 +221,7 @@ m.config(menu = game_menu)
 
 # Game option menu
 options_menu = Menu(game_menu,tearoff= False)
-game_menu.add_cascade(label=" Game Options ", menu = options_menu)
+game_menu.add_cascade(label=" Game Menu ", menu = options_menu)
 
 options_menu.add_command(label= "Reset ", command = reset_game)
 
