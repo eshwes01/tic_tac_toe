@@ -35,6 +35,13 @@ Copy the code into a Python file, for example, tic_tac_toe.py.
 * Step 4: Run the Game
 Open a terminal or command prompt, navigate to the directory where you saved the file, and run:
 
+* Step 5: Playing the Game
+    The game starts with an empty 3x3 grid of buttons.
+    Player X starts first, followed by Player O.
+    Players alternate clicks on the grid to place their marks ("X" or "O").
+    The game will announce the winner or a tie and disable further moves.
+  
+    You can reset the game using the “Reset” option from the menu.
 
 python tt_toe.py
 This will launch a GUI window for the Tic-Tac-Toe game.
