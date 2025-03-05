@@ -87,10 +87,75 @@ def check_Winner():
         winner = True
         messagebox.showinfo("Tic Tac Toe ", " Congratulation !!  X is the Winner  " )
         buttons_disabled() 
-        
+
+    # Check if O Wins 
+    if b1["text"] == "O" and b2["text"] == "O" and b3["text"] == "O" :
+        b1.config(bg="green")
+        b2.config(bg="green")
+        b3.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !! O is the Winner " )
+        buttons_disabled()
+
+    elif b4["text"] == "O" and b5["text"] == "O" and b6["text"] == "O" :
+        b4.config(bg="green")
+        b5.config(bg="green")
+        b6.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !! O is the Winner " )
+        buttons_disabled()
+
+    elif b7["text"] == "O" and b8["text"] == "O" and b9["text"] == "O" :
+        b7.config(bg="green")
+        b8.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !! O is the Winner " )
+        buttons_disabled()
+
+    elif b1["text"] == "O" and b4["text"] == "O" and b7["text"] == "O" :
+        b1.config(bg="green")
+        b4.config(bg="green")
+        b7.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !! O is the Winner " )
+        buttons_disabled()                
+
+    elif b2["text"] == "O" and b5["text"] == "O" and b8["text"] == "O" :
+        b2["bg"] = "green"
+        b5["bg"] = "green"
+        b8["bg"] = "green"
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !!  O is the Winner  " )
+        buttons_disabled() 
+
+    elif b3["text"] == "O" and b5["text"] == "O" and b9["text"] == "O" :
+        b3["bg"] = "green"
+        b5["bg"] = "green"
+        b9["bg"] = "green"
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !!  O is the Winner  " )
+        buttons_disabled() 
+
+    elif b1["text"] == "O" and b5["text"] == "O" and b9["text"] == "O" :
+        b1["bg"] = "green"
+        b5["bg"] = "green"
+        b9["bg"] = "green"
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !!  O is the Winner  " )
+        buttons_disabled()   
+
+    elif b3["text"] == "O" and b5["text"] == "O" and b7["text"] == "O" :
+        b3["bg"] = "green"
+        b5["bg"] = "green"
+        b7["bg"] = "green"
+        winner = True
+        messagebox.showinfo("Tic Tac Toe ", " Congratulation !!  O is the Winner  " )
+        buttons_disabled() 
+            
     else :
         if count == 9 and winner == False :
-            messagebox.showinfo ("Tic Tac Toe", " Tie ")
+            messagebox.showinfo ("Tic Tac Toe", " Game is Tie ")
             buttons_disabled()
 
 # User click of button 
