@@ -4,9 +4,13 @@ from tkinter import messagebox
 m = Tk()
 m.title('Tic-Tac-Toe Game')   
 
-# Disabled all buttons if wins
+# global variables
+clicked = True  # True for X, False for O
+count = 0  # Count the number of moves
+buttons = []  # List to store buttons
+
+# Disabled all buttons 
 def buttons_disabled():
-   
     b1.config(state= DISABLED)
     b2.config(state= DISABLED)
     b3.config(state= DISABLED)
