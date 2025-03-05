@@ -16,7 +16,7 @@ def buttons_disabled():
     b7.config(state= DISABLED)
     b8.config(state= DISABLED)
     b9.config(state= DISABLED)
-    messagebox.showwarning("Tic Tac Toe", " Game Over ")
+    messagebox.showwarning("Tic Tac Toe", " Game Over! \n Select Reset for New Game  ")
        
 # Checking Who Wins 
 def check_Winner():
@@ -155,7 +155,7 @@ def check_Winner():
             
     else :
         if count == 9 and winner == False :
-            messagebox.showinfo ("Tic Tac Toe", " Game is Tie ")
+            messagebox.showinfo ("Tic Tac Toe", " Game is Tie, Try Again !! ")
             buttons_disabled()
 
 # User click of button 
